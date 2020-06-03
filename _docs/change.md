@@ -1,6 +1,6 @@
 ---
 title: 变更记录
-category: QSphere
+category: Nirvana
 order: 8
 ---
 
