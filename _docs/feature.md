@@ -44,7 +44,7 @@ order: 4
   Nirvana 可以解析多层嵌套的json数据，从中抽取指定的信息，将“期望值”与“实际值”通过“匹配规则”进行比对，判断接口执行是否成功。
 <details>
   <summary>解析响应</summary>
-<li>默认提供:</li>  
+<li>  默认提供:</li>  
   <table>
     <thead>
       <tr>
@@ -75,7 +75,7 @@ order: 4
        </tr>
       </tbody>
    </table>
- <li>通过jsonpath解析:</li> 
+ <li>  通过jsonpath解析:</li> 
    <table>
     <thead>
       <tr>
@@ -122,7 +122,7 @@ order: 4
        </tr>
       </tbody>
    </table>
-   <li>支持正则表达式</li>
+   <li>  支持正则表达式</li>
 </details>
 
 
@@ -172,8 +172,35 @@ order: 4
    </table>
 </details>
 
+<details>
+  <summary>示例</summary>
+  <pre><code>  
+[
+  {
+    "comment": "DMP测试报告",
+    "create_time": "2020-01-19T11:41:37Z",
+    "id": 1,
+    "key": "ed02f420-63dd-4a45-8816-28c979795d5f",
+    "name": "DX-DMP-冲刺看板",
+    "type": null,
+    "update_time": null,
+    "url": "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=ed02f420-63dd-4a45-8816-28c979795d5f"
+  },
+  {
+    "comment": "NDX-Quality",
+    "create_time": "2020-01-20T19:54:22Z",
+    "id": 9,
+    "key": "074e0adc-40a5-478a-a7f3-5fbc38c6bc2b",
+    "name": "NDX-update",
+    "type": null,
+    "update_time": "2020-02-03T17:06:03Z",
+    "url": "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=074e0adc-40a5-478a-a7f3-5fbc38c6bc2b"
+  }
+]
 
-
+Nirvana设置响应断言条件时输入Key为$[0].comment，解析结果为[ “DMP测试报告” ]
+</code></pre>
+</details>
 
 
  
