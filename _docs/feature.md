@@ -1,6 +1,6 @@
 ---
-title: 功能
-category: QSphere
+title: 功能介绍
+category: Nirvana
 order: 4
 ---
 
