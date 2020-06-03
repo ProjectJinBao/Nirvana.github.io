@@ -43,11 +43,61 @@ order: 4
 ### 响应断言
   Nirvana 可以解析多层嵌套的json数据，从中抽取指定的信息，将“期望值”与“实际值”通过“匹配规则”进行比对，判断接口执行是否成功。
 <details>
-  <summary>解析响应</summary>- 默认提供:  
-|Key | 描述|  
-|-|-|  
-|content|响应体全部，json格式多级content.person.name.first_name|  
+  <summary>解析响应</summary>
+<li>默认提供:</li>  
+  
+Key | 描述
+---|---
+content|响应体全部，json格式多级content.person.name.first_name
+status_code | 响应状态码
+elapsed| 响应时间days, seconds, microseconds, total_seconds
+headers|响应头headers.content-type
+cookies|cookies
 
+---
+title: 功能介绍
+category: Nirvana
+order: 4
+---
 </details>
+
+- 默认提供：  
+
+
+
+
+- 可通过jsonpath解析：
+
+
+JSONPath | 描述
+---|---
+$ | 根节点，用于表示一个json数据，可以是数组或对象
+@| 当前节点对象
+.or[]|取子节点
+..|不管位置，选择所有符合条件的条件
+*|匹配所有元素节点
+[]	|迭代器标示（可以在里边做简单的迭代操作，如数组下标，根据内容选值等）
+[,]|支持迭代器中做多选
+?()|支持过滤操作
+()|支持表达式计算
+
+- 支持正则表达式
+
+
+##匹配规则 Match Rules
+
+规则 | 描述
+---|---
+equals | 判断实际结果和期望结果是否相等
+less_than| 判断实际结果小于期望结果
+less_than_or_equals|判断实际结果小于等于期望结果
+greater_than|判断实际结果大于期望结果
+greater_than_or_equals|判断实际结果大于等于期望结果
+not_equals	|判断实际结果和期望结果不相等
+string_equals|判断转字符串后，实际结果和期望结果是否相等
+length_equals|判断长度（字符串、列表、字典）
+
+
+
 
  
