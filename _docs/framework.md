@@ -1,6 +1,6 @@
 ---
 title: 架构
-category: QSphere
+category: Nirvana
 order: 3
 ---
 
