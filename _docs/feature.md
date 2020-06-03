@@ -200,7 +200,7 @@ order: 4
 
 Nirvana设置响应断言条件时输入Key为$[0].comment，解析结果为[ “DMP测试报告” ]
 </code></pre>
-</details>   
+</details>     
 
 
 ## 任务 Task
