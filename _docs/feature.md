@@ -4,7 +4,7 @@ category: Nirvana
 order: 4
 ---
 
-### 变量
+### 变量 Variable
 
 <details>
   <summary>全局变量</summary>
@@ -24,7 +24,7 @@ order: 4
 </details> 
 
   
-### 脚本
+### 脚本 Scripts
 <details>
   <summary>概念</summary>
 
@@ -40,7 +40,7 @@ order: 4
 </details>  
 
  
-### 响应断言
+### 响应断言 Assert
   Nirvana 可以解析多层嵌套的json数据，从中抽取指定的信息，将“期望值”与“实际值”通过“匹配规则”进行比对，判断接口执行是否成功。
 <details>
   <summary>解析响应</summary>
@@ -203,4 +203,6 @@ Nirvana设置响应断言条件时输入Key为$[0].comment，解析结果为[ �
 </details>
 
 
- 
+## 任务 Task
+
+测试任务就是把指定的测试用例放在一起，作为一个集合。当用户执行某个测试任务的时候，也就是执行了包含在测试任务中的测试用例。
