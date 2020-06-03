@@ -4,8 +4,6 @@ title: 欢迎使用
 
 ### Nirvana
 
-<img src="/siteicon.png" width="400" />
-
 > 接口自动化平台
 
 [![org](https://img.shields.io/static/v1?style=for-the-badge&label=org&message=Truth%20%26%20Insurance%20Office&color=597ed9)](http://bx.baoxian-sz.com)
