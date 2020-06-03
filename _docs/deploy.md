@@ -4,7 +4,7 @@ category: Nirvana
 order: 5
 ---
 
-# 运行环境
+## 运行环境
 Nirvana 是一个基于 Python 开发的测试框架，可以运行在 macOS、Linux、Windows 系统平台上。  
 
 
@@ -12,5 +12,5 @@ Nirvana 是一个基于 Python 开发的测试框架，可以运行在 macOS、L
 
 **操作系统**：推荐使用 macOS/Linux。
 
-#安装
+## 安装
 *待更新*
