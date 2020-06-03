@@ -1,7 +1,7 @@
 ---
 title: 架构
 category: Nirvana
-order: 3
+order: 2
 ---
 
 ### 组件
