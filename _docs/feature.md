@@ -36,7 +36,7 @@ order: 4
 </details>
 <details>
   <summary>引用脚本</summary>
-引用脚本的方法：${get_message_center_token()}，通过此方式平台会去执行demo.py这个脚本。
+引用脚本的方法：${get_message_center_token()}，通过此方式平台会去执行get_message_center_token()这个函数。
 </details>  
 
  
