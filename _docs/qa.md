@@ -1,6 +1,6 @@
 ---
 title: Q&A
-category: QSphere
+category: Nirvana
 order: 7
 ---
 
