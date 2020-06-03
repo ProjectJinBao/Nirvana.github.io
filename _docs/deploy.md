@@ -1,68 +1,16 @@
 ---
 title: 安装部署
-category: QSphere
+category: Nirvana
 order: 5
 ---
 
-### 安装/升级
+# 运行环境
+Nirvana 是一个基于 Python 开发的测试框架，可以运行在 macOS、Linux、Windows 系统平台上。  
 
-```bash
-docker-compose -f docker-compose.yaml pull
-docker-compose -f docker-compose.yaml up -d
-```
 
-#### docker-compose.yaml
-```yaml
-version: "3"
-services:
-  qsphere-db:
-    container_name: qsphere-db
-    image: postgres:10
-    restart: always
-    environment:
-      POSTGRES_DB: 'qsphere'
-      POSTGRES_PASSWORD: 'password'
-    volumes:
-      - ./qsphere-pgdata:/var/lib/postgresql/data
-    command: ["-c", "max_connections=2000"]
+**Python 版本**：支持 Python 3.7及以上的所有版本。
 
-  qsphere-svc:
-    container_name: qsphere-svc
-    image: bxwill/qsphere:svc-latest
-    restart: always
-    ports:
-      - 6001:6001
-    environment:
-      PG_DB: 'qsphere'
-      PG_SERVER: qsphere-db
-      PG_USER: 'postgres'
-      PG_PASSWORD: 'password'
-    depends_on:
-      - qsphere-db
+**操作系统**：推荐使用 macOS/Linux。
 
-  qsphere-grafana:
-    container_name: qsphere-grafana
-    image: bxwill/qsphere:grafana-latest
-    restart: always
-    ports:
-      - 3000:3000
-    environment:
-      PG_DB: 'qsphere'
-      PG_SERVER: qsphere-db
-      PG_PORT: '5432'
-      PG_USER: 'postgres'
-      PG_PASSWORD: 'password'
-    depends_on:
-      - qsphere-db
-      - qsphere-svc
-
-  qsphere-ui:
-    container_name: qsphere-ui
-    image: bxwill/qsphere:ui-latest
-    restart: always
-    ports:
-      - 8080:80
-    depends_on:
-      - qsphere-svc
-      - qsphere-grafana
-```
+#安装
+*待更新*
