@@ -13,4 +13,4 @@ order: 1
 - 全自动化实现对测试人员代码能力有要求，门槛高、受众群体小
 
 
-![](/images/back.png)
+![test (1)](https://user-images.githubusercontent.com/38028293/83627633-cfb55b00-a5c9-11ea-9f6f-e7877b4e350e.png)
