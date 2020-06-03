@@ -4,7 +4,7 @@ title: 欢迎使用
 
 ### Nirvana
 
-<img src="/images/qap.png" width="400" />
+<img src="/siteicon.png" width="400" />
 
 > 接口自动化平台
 
