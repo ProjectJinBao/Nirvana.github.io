@@ -8,7 +8,6 @@ order: 6
 Nirvana 登录页面点击 “Get Gitlab Authority”，页面跳转值 GitLab 登录页面，输入 GitLab 用户信息并登录，进入Nirvana主页面。
 
 
-
 ## 添加Repo
 点击 “Add Repo” 按钮，弹出界面选择要测试的项目并且确认。主页面将展示新增的 Repo 信息。    
 
