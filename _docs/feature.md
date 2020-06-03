@@ -75,43 +75,103 @@ order: 4
        </tr>
       </tbody>
    </table>
-       
+ <li>通过jsonpath解析:</li> 
+   <table>
+    <thead>
+      <tr>
+        <th>JSONPath</th>
+        <th>描述</th>
+      </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td>$</td>
+         <td>根节点，用于表示一个json数据，可以是数组或对象</td>
+       </tr>
+       <tr>
+         <td>@</td>
+         <td>当前节点对象</td>
+       </tr>
+       <tr>
+         <td>.or[]</td>
+         <td>取子节点</td>
+       </tr>
+       <tr>
+         <td>..</td>
+         <td>不管位置，选择所有符合条件的条件</td>
+       </tr>
+       <tr>
+         <td>*</td>
+         <td>匹配所有元素节点</td>
+       </tr>
+       <tr>
+         <td>[]</td>
+         <td>迭代器标示（可以在里边做简单的迭代操作，如数组下标，根据内容选值等</td>
+       </tr>
+       <tr>
+         <td>[,]</td>
+         <td>支持迭代器中做多选</td>
+       </tr>
+       <tr>
+         <td>?()</td>
+         <td>支持过滤操作</td>
+       </tr>
+       <tr>
+         <td>()</td>
+         <td>支持表达式计算</td>
+       </tr>
+      </tbody>
+   </table>
+   <li>支持正则表达式</li>
 </details>
 
 
+<details>
+  <summary>匹配规则 Match Rules</summary>
+<table>
+    <thead>
+      <tr>
+        <th>规则</th>
+        <th>描述</th>
+      </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td>equals</td>
+         <td>判断实际结果和期望结果是否相等</td>
+       </tr>
+       <tr>
+         <td>less_than</td>
+         <td>判断实际结果小于期望结果</td>
+       </tr>
+       <tr>
+         <td>less_than_or_equals</td>
+         <td>判断实际结果小于等于期望结果</td>
+       </tr>
+       <tr>
+         <td>greater_than</td>
+         <td>判断实际结果大于期望结果</td>
+       </tr>
+       <tr>
+         <td>greater_than_or_equals</td>
+         <td>判断实际结果大于等于期望结果</td>
+       </tr>
+       <tr>
+         <td>not_equals</td>
+         <td>判断实际结果和期望结果不相等</td>
+       </tr>
+       <tr>
+         <td>string_equals</td>
+         <td>判断转字符串后，实际结果和期望结果是否相等</td>
+       </tr>
+       <tr>
+         <td>length_equals</td>
+         <td>判断长度（字符串、列表、字典）</td>
+       </tr>
+      </tbody>
+   </table>
+</details>
 
-
-
-- 可通过jsonpath解析：
-
-
-JSONPath | 描述
----|---
-$ | 根节点，用于表示一个json数据，可以是数组或对象
-@| 当前节点对象
-.or[]|取子节点
-..|不管位置，选择所有符合条件的条件
-*|匹配所有元素节点
-[]	|迭代器标示（可以在里边做简单的迭代操作，如数组下标，根据内容选值等）
-[,]|支持迭代器中做多选
-?()|支持过滤操作
-()|支持表达式计算
-
-- 支持正则表达式
-
-
-##匹配规则 Match Rules
-
-规则 | 描述
----|---
-equals | 判断实际结果和期望结果是否相等
-less_than| 判断实际结果小于期望结果
-less_than_or_equals|判断实际结果小于等于期望结果
-greater_than|判断实际结果大于期望结果
-greater_than_or_equals|判断实际结果大于等于期望结果
-not_equals	|判断实际结果和期望结果不相等
-string_equals|判断转字符串后，实际结果和期望结果是否相等
-length_equals|判断长度（字符串、列表、字典）
 
 
 
