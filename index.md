@@ -2,9 +2,10 @@
 title: 欢迎使用
 ---
 
-### Nirvana
+### Nirvana 涅槃，超脱一切烦恼的境界  
 
-> 接口自动化平台
+> 接口自动化平台  
+> 通过UI界面与用户友好交互，提供统一的文档入口，根据接口文档自动生成测试用例，是集测试用例管理与接口自动化为一体的可视化智能平台！
 
 [![org](https://img.shields.io/static/v1?style=for-the-badge&label=org&message=Truth%20%26%20Insurance%20Office&color=597ed9)](http://bx.baoxian-sz.com)
 [![python](https://img.shields.io/static/v1?style=for-the-badge&logo=python&label=Python&message=3.7&color=3776AB)](https://www.python.org)
