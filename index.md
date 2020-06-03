@@ -19,8 +19,8 @@ title: 欢迎使用
 
 ### 平台预览
 
-![Tracker](/images/tracker.png)
+![Repo](/images/repo.png)
 ![Project](/images/project.png)
-![Sprint](/images/sprint.png)
-![Dashboard](/images/dashboard.png)
+![Testcase](/images/testcase.png)
+![Task](/images/task.png)
 
