@@ -11,7 +11,8 @@ Nirvana 登录页面点击 “Get Gitlab Authority”，页面跳转值 GitLab �
 ## 添加Repo
 点击 “Add Repo” 按钮，弹出界面选择要测试的项目并且确认。主页面将展示新增的 Repo 信息。    
 
-## 添加变量      
+## 添加变量
+
 #### 环境变量  
 `host`为请求的服务地址，环境变量中必须有 host 且仅在环境变量中有效。  
 1.进入 Repo，选择接口文档，Nirvana会将符合 swagger 3.0 规范的 yaml 转换为接口信息展示。  
@@ -24,6 +25,7 @@ Nirvana 登录页面点击 “Get Gitlab Authority”，页面跳转值 GitLab �
 
 
 ## 测试用例管理  
+
 
 #### 添加测试用例   
 1.项目界面，切换至 Swagger 界面，点击 “Test Case” 按钮，进入测试用例管理界面。  
