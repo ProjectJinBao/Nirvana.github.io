@@ -14,9 +14,24 @@ Nirvana 是一个基于 Python 开发的测试框架，可以运行在 macOS、L
 
 ## 安装
 
-### 构建镜像
+### 1.构建镜像
 - UI  
 ```
 git clone https://github.com/nirvana-lab/gittest.git
 docker build . -t nirvana-ui:latest
 ```
+- Service
+
+```
+git clone https://github.com/nirvana-lab/nirvana7.git
+docker build . -t nirvana-server:latest 
+```      
+   
+
+### 2.部署准备
+在放置docker-compose.yaml的目录下创建以下目录：
+.
+├── docker-compose.yaml
+├── nirvana_pgdata  这个目录是用来挂在pg的数据的
+└── script   这个目录是用来挂在python脚本的
+
