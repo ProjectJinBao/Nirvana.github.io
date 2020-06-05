@@ -96,7 +96,7 @@ services:
 
 ![Tracker](/images/gitlab.png)
 
-2. 创建完成获得:Application ID, Secret, Callback URL用于发送post请求
+2. 创建完成获得Application ID, Secret, Callback URL用于发送post请求
 
 ```
 curl --location --request PUT 'http://{nirvana_ui_url}/api/sso'
@@ -110,5 +110,5 @@ curl --location --request PUT 'http://{nirvana_ui_url}/api/sso'
 ```
 
 
-如果没有gitlab请自行安装[安装指南](https://github.com/lunamagic1978/document/blob/master/middleware/GitLab-ce%E5%AE%89%E8%A3%85.md)
+如果没有gitlab请自行安装「[安装指南]」(https://github.com/lunamagic1978/document/blob/master/middleware/GitLab-ce%E5%AE%89%E8%A3%85.md)
 
