@@ -89,14 +89,14 @@ services:
 
 ### 3.初始化GitLab Applications
 
-登录GitLab，Setting-》Applications:  
-`Name` 自定义名字
-`Redirect URI` Nirvana UI的地址  
-`Scopes` 勾选api、read_user、read_api、read_repository、openid、profile、email  
+1. 登录GitLab，Setting-》Applications:  
+`Name` 自定义名字  
+`Redirect URI` Nirvana UI的地址    
+`Scopes` 勾选api、read_user、read_api、read_repository、openid、profile、email    
 
 ![Tracker](/images/gitlab.png)
 
-创建完成后就能获得:Application ID, Secret, Callback URL用于发送post请求
+2. 创建完成获得:Application ID, Secret, Callback URL用于发送post请求
 
 ```
 curl --location --request PUT 'http://{nirvana_ui_url}/api/sso'
