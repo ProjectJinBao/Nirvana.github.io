@@ -29,9 +29,12 @@ docker build . -t nirvana-server:latest
    
 
 ### 2.部署准备
-在放置docker-compose.yaml的目录下创建以下目录：
+
+```
 .
 ├── docker-compose.yaml
 ├── nirvana_pgdata  这个目录是用来挂在pg的数据的
 └── script   这个目录是用来挂在python脚本的
+```
 
+docker-compose
