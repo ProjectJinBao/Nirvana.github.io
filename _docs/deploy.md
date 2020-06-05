@@ -30,7 +30,7 @@ docker build . -t nirvana-server:latest
 ### 2.部署
 
 - 目录结构
-```
+```  
 .
 ├── docker-compose.yaml
 ├── nirvana_pgdata  用来挂载pg的数据
@@ -96,7 +96,6 @@ services:
 ![Tracker](/images/gitlab.png)
 
 创建完成获得Application ID, Secret, Callback URL用于发送post请求
-
 ```
 curl --location --request PUT 'http://{nirvana_ui_url}/api/sso'
 	--header 'Content-Type: application/json'
