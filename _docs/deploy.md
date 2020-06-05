@@ -38,7 +38,7 @@ docker build . -t nirvana-server:latest
 └── script   用来挂载python脚本
 ```
 
-- docker-compose.yaml  
+- docker-compose.yaml
 <pre>
   <code>
 version: "2"
