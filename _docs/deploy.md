@@ -17,7 +17,7 @@ Nirvana 是一个基于 Python 开发的测试框架，可以运行在 macOS、L
 ### 1.构建镜像
 - UI  
 ```
-git clone https://github.com/nirvana-lab/gittest.git
+git clone https://github.com/nirvana-lab/nirvana-ui.git
 docker build . -t nirvana-ui:latest
 ```
 - Service
