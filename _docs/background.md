@@ -12,4 +12,4 @@ order: 1
 - 每个写接口自动化的人都有一套自己的体系，推广体系成本高，最后导致维护成本高
 - 全自动化实现对测试人员代码能力有要求，门槛高、受众群体小
 
-![test1 (1)](https://user-images.githubusercontent.com/38028293/83628049-7b5eab00-a5ca-11ea-8a4a-b475b64f17dc.png)
+<img src="/images/back.png" width="240" />
