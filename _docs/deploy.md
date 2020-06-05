@@ -30,11 +30,68 @@ docker build . -t nirvana-server:latest
 
 ### 2.部署准备
 
+- 目录结构
 ```
 .
 ├── docker-compose.yaml
-├── nirvana_pgdata  这个目录是用来挂在pg的数据的
-└── script   这个目录是用来挂在python脚本的
+├── nirvana_pgdata  用来挂载pg的数据
+└── script   用来挂载python脚本
 ```
 
-docker-compose
+- docker-compose.yaml
+```
+version: '2'
+services:
+  nirvana-db:
+    image: postgres:10
+    container_name: nirvana-db
+    restart: always
+    ports:
+    - 5432:5432
+    environment:
+      POSTGRES_DB: nirvana
+      POSTGRES_PASSWORD: password
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+    - ./nirvana_pgdata:/data/pg_data
+  nirvana-service:
+    image: nirvana-server:latest
+    container_name: nirvana-service
+    restart: always
+    ports:
+    - 9999:9090
+    volumes:
+    - ./script:/workspace/openapi/script
+    environment:
+      PG_HOST: nirvana-db
+      PG_NAME: nirvana
+      PG_USER: postgres
+      PG_PASSWORD: password
+    depends_on:
+    - nirvana-db
+  nirvana-ui:
+    image: nirvana-ui:latest
+    container_name: nirvana-ui
+    restart: always
+    ports:
+    - 8888:80
+    environment:
+      GIT: http://10.10.130.101         #Gitlab地址
+      TEST: http://nirvana-service:9090 #Nirvana服务地址
+      DB_USER: postgres
+      DB_PASSWORD: password
+      DB_HOST: nirvana-db
+      DB_NAME: nirvana
+      DB_PORT: 5432
+    depends_on:
+    - nirvana-db
+```
+
+### 3.初始化GitLab Applications
+
+登录GitLab，Setting-》Applications，输入Name（自定义）、Redirect URI（Nirvana UI的地址），Scopes勾选api、read_user、read_api,read_repository、openid、profile、email
+
+
+
+如果没有gitlab请自行安装（百度）
+
