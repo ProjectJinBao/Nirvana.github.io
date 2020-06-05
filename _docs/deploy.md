@@ -39,8 +39,8 @@ docker build . -t nirvana-server:latest
 ```
 
 - docker-compose.yaml  
-```
-
+<pre>
+  <code>
 version: "2"
 services:
   nirvana-db:
@@ -88,7 +88,8 @@ services:
       DB_PORT: 5432
     depends_on:
     - nirvana-db
-```
+   </code>
+ </pre>
 
 ### 3.初始化GitLab Applications
 
