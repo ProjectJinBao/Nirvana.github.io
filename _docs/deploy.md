@@ -39,8 +39,8 @@ docker build . -t nirvana-server:latest
 ```
 
 - docker-compose.yaml  
-```  
-version: '2'
+```yaml
+version: "2"
 services:
   nirvana-db:
     image: postgres:10
@@ -54,6 +54,7 @@ services:
       PGDATA: /var/lib/postgresql/data/pgdata
     volumes:
     - ./nirvana_pgdata:/data/pg_data
+    
   nirvana-service:
     image: nirvana-server:latest
     container_name: nirvana-service
@@ -69,6 +70,7 @@ services:
       PG_PASSWORD: password
     depends_on:
     - nirvana-db
+    
   nirvana-ui:
     image: nirvana-ui:latest
     container_name: nirvana-ui
