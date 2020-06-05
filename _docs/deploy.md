@@ -20,8 +20,7 @@ Nirvana 是一个基于 Python 开发的测试框架，可以运行在 macOS、L
 git clone https://github.com/nirvana-lab/nirvana-ui.git
 docker build . -t nirvana-ui:latest
 ```
-- Service
-
+- Service  
 ```
 git clone https://github.com/nirvana-lab/nirvana7.git
 docker build . -t nirvana-server:latest 
@@ -38,7 +37,7 @@ docker build . -t nirvana-server:latest
 └── script   用来挂载python脚本
 ```
 
-- docker-compose.yaml
+- docker-compose.yaml  
 ```
 version: '2'
 services:
@@ -89,14 +88,14 @@ services:
 
 ### 3.初始化GitLab Applications
 
-1. 登录GitLab，Setting-》Applications:  
+登录GitLab，Setting-》Applications:  
 `Name` 自定义名字  
 `Redirect URI` Nirvana UI的地址    
 `Scopes` 勾选api、read_user、read_api、read_repository、openid、profile、email    
 
 ![Tracker](/images/gitlab.png)
 
-2. 创建完成获得Application ID, Secret, Callback URL用于发送post请求
+创建完成获得Application ID, Secret, Callback URL用于发送post请求
 
 ```
 curl --location --request PUT 'http://{nirvana_ui_url}/api/sso'
