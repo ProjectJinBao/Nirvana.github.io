@@ -28,7 +28,7 @@ docker build . -t nirvana-server:latest
 ```      
    
 
-### 2.部署准备
+### 2.部署
 
 - 目录结构
 ```
