@@ -39,7 +39,8 @@ docker build . -t nirvana-server:latest
 ```
 
 - docker-compose.yaml  
-```yaml
+```
+
 version: "2"
 services:
   nirvana-db:
