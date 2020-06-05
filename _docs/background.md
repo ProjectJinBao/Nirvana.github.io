@@ -13,3 +13,4 @@ order: 1
 - 全自动化实现对测试人员代码能力有要求，门槛高、受众群体小
 
 <img src="/images/back.png" width="240" />
+![back](/images/back.png)
