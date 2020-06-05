@@ -90,8 +90,9 @@ services:
 ### 3.初始化GitLab Applications
 
 登录GitLab，Setting-》Applications:  
-输入Name（自定义）、Redirect URI（Nirvana UI的地址）  
-Scopes勾选api、read_user、read_api、read_repository、openid、profile、email  
+`Name` 自定义名字
+`Redirect URI` Nirvana UI的地址  
+`Scopes` 勾选api、read_user、read_api、read_repository、openid、profile、email  
 
 ![Tracker](/images/gitlab.png)
 
