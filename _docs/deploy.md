@@ -69,6 +69,7 @@ services:
       PG_NAME: nirvana
       PG_USER: postgres
       PG_PASSWORD: password
+      PG_PORT: 5432
       GITLAB_URL: https://git.lug.ustc.edu.cn 
     depends_on:
     - nirvana-db
