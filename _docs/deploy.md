@@ -69,6 +69,7 @@ services:
       PG_NAME: nirvana
       PG_USER: postgres
       PG_PASSWORD: password
+      GITLAB_URL: https://git.lug.ustc.edu.cn 
     depends_on:
     - nirvana-db
     
@@ -79,7 +80,7 @@ services:
     ports:
     - 8888:80
     environment:
-      GIT: http://10.10.130.101
+      GIT: https://git.lug.ustc.edu.cn
       TEST: http://nirvana-service:9090
       DB_USER: postgres
       DB_PASSWORD: password
